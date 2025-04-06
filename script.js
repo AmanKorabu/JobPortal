@@ -31,11 +31,16 @@ function displayJobs(jobArray) {
                 <h4>${job.title}</h4>
                 <p><strong>Company:</strong> ${job.company}</p>
                 <p><strong>Location:</strong> ${job.location}</p>
+                <a href="job-details.html?title=${encodeURIComponent(job.title)}&company=${encodeURIComponent(job.company)}&location=${encodeURIComponent(job.location)}">
+                    <button>Apply Now</button>
+                </a>
             `;
+
             jobResults.appendChild(jobCard);
         });
     }
 }
+
 
 // Hamburger menu toggle functionality
 const hamburger = document.getElementById('hamburger');
