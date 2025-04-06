@@ -1,12 +1,24 @@
 // job-details.js
-const params = new URLSearchParams(window.location.search);
-
-document.getElementById("jobTitle").innerText = params.get("title");
-document.getElementById("jobCompany").innerText = params.get("company");
-document.getElementById("jobLocation").innerText = params.get("location");
-
-// Optional: handle form submission
-document.getElementById("applyForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Application submitted successfully!");
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get("title");
+    const company = urlParams.get("company");
+    const location = urlParams.get("location");
+  
+    document.getElementById("jobTitle").textContent = title;
+    document.getElementById("jobCompany").textContent = company;
+    document.getElementById("jobLocation").textContent = location;
+  
+    const form = document.getElementById("applicationForm");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      const name = document.getElementById("applicantName").value;
+      const email = document.getElementById("applicantEmail").value;
+      const cover = document.getElementById("coverLetter").value;
+  
+      alert(`Application Submitted!\n\nName: ${name}\nEmail: ${email}\nCover Letter: ${cover}`);
+      form.reset();
+    });
+  });
+  
