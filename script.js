@@ -32,7 +32,7 @@ function displayJobs(jobArray) {
                 <p><strong>Company:</strong> ${job.company}</p>
                 <p><strong>Location:</strong> ${job.location}</p>
                 <a href="job-details.html?title=${encodeURIComponent(job.title)}&company=${encodeURIComponent(job.company)}&location=${encodeURIComponent(job.location)}">
-                    <button>Apply Now</button>
+                    <button class="apply-btn">Apply Now</button>
                 </a>
             `;
 
