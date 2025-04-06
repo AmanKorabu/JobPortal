@@ -3,7 +3,8 @@ const jobs = [
     { title: "Product Manager", company: "Infosys", location: "Pune, Maharashtra" },
     { title: "UX/UI Designer", company: "Persistent Systems", location: "Nashik, Maharashtra" },
     { title: "Data Analyst", company: "Cognizant", location: "Nagpur, Maharashtra" },
-    { title: "Frontend Developer", company: "Zensar Technologies", location: "Aurangabad, Maharashtra" }
+    { title: "Frontend Developer", company: "Zensar Technologies", location: "Aurangabad, Maharashtra" },
+    { title: "Web Developer", company: "Walstar Technologies", location: "Mumbai, Maharashtra" }
 ];
 
 function searchJobs() {
