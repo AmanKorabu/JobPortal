@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Portal</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="logo" style="display: flex; align-items: center;">
-            <a href="mainhome.html"><img src="logo.jpg" alt="logo" style="height: 90px; width: 120px; margin-left: 15px; border-radius: 75em 5em;"></a>
-            <h1>JobPortal</h1>
+  <header>
+    <div class="logo" style="display: flex; align-items: center;">
+      <a href="mainhome.html">
+        <img src="logo.jpg" alt="logo" style="height: 90px; width: 120px; margin-left: 15px; border-radius: 75em 5em;" />
+      </a>
+      <h1>JobPortal</h1>
+    </div>
+    <nav>
+      <ul id="navLinks">
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+      <div id="hamburger" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find Your Dream Job</h2>
+    <input type="text" id="searchBar" placeholder="Search for jobs..." />
+    <button onclick="searchJobs()">Search</button>
+  </section>
+
+  <section class="job-listings">
+    <h3>Available Jobs</h3>
+    <div id="jobResults">
+        <div class="job-card">
+            <h4>Frontend Developer</h4>
+            <p><strong>Company:</strong> Zensar Technologies</p>
+            <p><strong>Location:</strong> Aurangabad, Maharashtra</p>
+            <a href="apply-form.html">
+                <button class="apply-btn">Apply Now</button>
+            </a>
         </div>
-        <nav>
-            <ul id="navLinks">
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <!-- <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li> -->
-            </ul>
-            <div id="hamburger" class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
+    </div>
+    
+  </section>
 
-    <section class="hero">
-        <h2>Find Your Dream Job</h2>
-        <input type="text" id="searchBar" placeholder="Search for jobs...">
-        <button onclick="searchJobs()">Search</button>
-    </section>
+  <footer>
+    <p>&copy; 2025 JobPortal. All Rights Reserved.</p>
+  </footer>
 
-    <section class="job-listings">
-        <h3>Available Jobs</h3>
-        <div id="jobResults"></div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 JobPortal. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
