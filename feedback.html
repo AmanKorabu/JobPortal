@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo" style="display: flex; align-items: center;">
+            <a href="mainhome.html"><img src="logo.jpg" alt="logo" style="height: 90px; width: 120px; margin-left: 15px; border-radius: 75em 5em;"></a>
+        </div>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a class="active" href="feedback.html">Feedback</a></li>
+            </ul>
+            <div id="hamburger" class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-section">
+        <h3>We Value Your Feedback</h3>
+        <p>Your feedback helps us improve our job portal. Please take a moment to share your thoughts with us!</p>
+        <form class="feedback-form" action="#" method="POST">
+            <textarea name="feedback" placeholder="Write your feedback here..." rows="5"></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 JobPortal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

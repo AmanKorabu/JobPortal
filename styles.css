@@ -1,0 +1,404 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hamburger menu styling */
+#hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#hamburger .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #3498db;
+    color: #fff;
+   
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero input {
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #c0392b;
+}
+
+/* Job Listings Styling */
+.job-listings {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.job-listings h3 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Job Cards Styling */
+.job-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(33.33% - 40px); /* Display 3 cards in a row */
+    margin-right: 20px;
+    text-align: left;
+}
+
+.job-card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.job-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.job-card button:hover {
+    background-color: #2980b9;
+}
+
+/* Form General Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #34495e;
+}
+
+/* Post a Job form */
+.post-job-form {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ensure form doesn't stretch too wide on large screens */
+}
+
+.post-job-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Login/Register Forms */
+.login-form,
+.register-form {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ensure form doesn't stretch too wide on large screens */
+}
+
+.login-form h2,
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer Styling */
+/* Global Styles to ensure the footer stays at the bottom */
+html, body {
+    height: 100%; /* Make sure the body takes full height */
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+}
+.active{
+    background-color: #6bd8e4;
+   padding: 9px;
+   border-radius: 5em;
+   color: black;
+    
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+
+    .hero input {
+        width: 80%;
+    }
+
+    .job-listings .job-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Show hamburger menu */
+    #hamburger {
+        display: flex;
+    }
+
+    .show-menu {
+        display: flex !important; /* Make the menu visible when hamburger is clicked */
+    }
+
+    /* Forms for Mobile */
+    .post-job-form,
+    .login-form,
+    .register-form {
+        width: 90%; /* Adjust form width on mobile to fit screen */
+        padding: 15px;
+    }
+
+    .post-job-form h2,
+    .login-form h2,
+    .register-form h2 {
+        font-size: 24px; /* Make the header text smaller on mobile */
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    form button {
+        padding: 12px 20px; /* Adjust button padding on mobile */
+    }
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .job-listings .job-card {
+        width: calc(33.33% - 40px); /* Three cards per row */
+    }
+
+    .post-job-form,
+    .login-form,
+    .register-form {
+        max-width: 600px; /* Limit form width on large screens */
+        margin: 40px auto;
+        padding: 30px;
+    }
+
+    .post-job-form h2,
+    .login-form h2,
+    .register-form h2 {
+        font-size: 32px;
+    }
+}
+/* feedback */
+/* Feedback Section Styling */
+.feedback-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px; /* Max width for better form layout */
+}
+
+.feedback-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.feedback-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Styling the Feedback Form */
+.feedback-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+    min-height: 150px; /* Make sure it’s tall enough */
+}
+
+.feedback-form input {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Styling the Submit Button */
+.feedback-form button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Form Input Placeholder Styling */
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .feedback-section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .feedback-form textarea,
+    .feedback-form input,
+    .feedback-form button {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+
+    .feedback-form button {
+        padding: 12px 25px;
+    }
+}
+
